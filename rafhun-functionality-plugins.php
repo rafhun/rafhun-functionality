@@ -8,7 +8,7 @@
  * Author URI: https://github.com/rafhun
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain: rafhun-editor
+ * Text Domain: rafhun-functionality
  * Domain Path: /languages
  */
 

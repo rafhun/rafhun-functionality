@@ -1,17 +1,4 @@
 <?php
-/**
- * Plugin Name: rafhun-editor
- * Plugin URI: https://github.com/rafhun/rafhun-editor
- * Description: Adds some basic functionality and customizations to your WP editor. Defines a default CSS file containing editor styles to be used and can be extended with styles configurations.
- * Version: 0.1.0
- * Author: rafhun
- * Author URI: https://github.com/rafhun
- * License: GPL-2.0+
- * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain: rafhun-editor
- * Domain Path: /languages
- */
-
 // editor styles
 function rafhun_editor_styles() {
   add_editor_style( array( 'icons/icons.data.svg.css', 'editor-styles.css' ) );
