@@ -1,0 +1,25 @@
+{
+  "name": "rafhun-functionality-plugins",
+  "version": "0.1.0",
+  "description": "Functionality Plugins for WordPress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafhun/rafhun-functionality-plugins.git"
+  },
+  "author": "rafhun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafhun/rafhun-functionality-plugins/issues"
+  },
+  "homepage": "https://github.com/rafhun/rafhun-functionality-plugins#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-gettext": "^0.1.0",
+    "gulp-sort": "^1.1.1",
+    "gulp-wp-pot": "^1.1.1"
+  }
+}
