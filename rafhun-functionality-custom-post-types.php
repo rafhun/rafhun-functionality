@@ -6,6 +6,12 @@
  *
  * @package rafhun
  * @since 0.1.0
+ *
+ * Usage: copy file and rename it to represent your custom post type. Then do a search and replace for PostTypes and give it the appropriate name (plural). After that search for PostType and replace it with the singular name of your custom post type. If you need/want to define multiple post types or taxonomies in the same file just add the relevant data to the class methods. To adjust the taxonomies search and replace Taxonomies first, then do the same for Taxonomy. Make sure you enable case sensitive search.
+ *
+ * At last look for the function `register_post_type( 'posttype', …)`. There replace posttype by the actual name you want to reference your custom post type with. Also check the options in the following array and adjust them to your needs.
+ *
+ * Once you are all set with your post type, determine the image sizes it demands. If any additional sizes need to be added do this here along with the post type registration within the class method `after_setup_theme`. Should you not need the example image size given comment it out or delete it completely.
  */
 
 if ( !class_exists( 'PostType' ) ) :
