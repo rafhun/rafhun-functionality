@@ -42,18 +42,43 @@ if ( !class_exists( 'PostType' ) ) :
         'new_item' => __( 'New PostType', 'rafhun-functionality' ),
         'view_item' => __( 'View PostType', 'rafhun-functionality' ),
         'search_items' => __( 'Search PostTypes', 'rafhun-functionality' ),
+        'parent_item_colon' => __( 'Parent Item:', 'rafhun-functionality' ),
         'not_found' => __( 'No PostTypes Found', 'rafhun-functionality' ),
         'not_found_in_trash' => __( 'No PostTypes Found in Trash', 'rafhun-functionality' ),
-        'parent_item_colon' => ''
+        'featured_image' => __( 'PostType Cover Image', 'rafhun-functionality' ),
+        'set_featured_image' => __( 'Set PostType Cover Image', 'rafhun-functionality' ),
+        'remove_featured_image' => __( 'Remove PostType Cover Image', 'rafhun-functionality' ),
+        'use_featured_image' => __( 'Use as PostType Cover Image', 'rafhun-functionality' ),
+        'archives' => __( 'PostType archives', 'rafhun-functionality' ),
+        'insert_into_item' => __( 'Insert Into PostType', 'rafhun-functionality' ),
+        'uploaded_to_this_item' => __( 'Uploaded to this PostType', 'rafhun-functionality' ),
+        'filter_items_list' => __( ' Filter PostTypes list', 'rafhun-functionality' ),
+        'items_list_navigation' => __( 'PostTypes List Navigation', 'rafhun-functionality' ),
+        'items_list' => __( 'PostTypes List', 'rafhun-functionality' )
       );
 
       register_post_type( 'posttype', array(
         'labels' => $labels,
+        'description' => 'A short descriptive summary of what the post type is.'
         'public' => true,
-        'has_archive' => true,
+        'hierarchical' => false,
+        // all of the following settings can be and by default are inherited from the value of public, however it is possible to set them individually
+        // 'exclude_from_search' => false,
+        // 'publicly_queryable' => true,
+        // 'show_ui' => true,
+        // 'show_in_menu' => true,
+        // 'show_in_nav_menus' => true,
+        // 'show_in_admin_bar' => true,
+        'menu_position' => null,
         'menu_icon' => 'dashicons-hammer',
-        'rewrite' => array( 'slug' => 'posttype' ),
-        'supports' => array( 'title', 'editor', 'thumbnail' )
+        'capability_type' => 'post',
+        // 'capabilities' => '', // set from capability_type
+        'map_meta_cap' => false,
+        'supports' => array( 'title', 'editor', 'thumbnail' ),
+        // 'register_meta_box_cb' => null,
+        // 'taxonomies' => null,
+        'has_archive' => true,
+        'rewrite' => array( 'slug' => 'posttype' )
       ) );
     }
 
