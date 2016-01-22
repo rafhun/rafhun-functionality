@@ -15,4 +15,4 @@
 require 'rafhun-functionality-adjacent-category.php';
 require 'rafhun-functionality-custom-post-types.php';
 require 'rafhun-functionality-editor.php';
-require 'rafhun-functionality-head-cleanup';
+require 'rafhun-functionality-head-cleanup.php';

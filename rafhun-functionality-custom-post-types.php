@@ -59,7 +59,7 @@ if ( !class_exists( 'PostType' ) ) :
 
       register_post_type( 'posttype', array(
         'labels' => $labels,
-        'description' => 'A short descriptive summary of what the post type is.'
+        'description' => 'A short descriptive summary of what the post type is.',
         'public' => true,
         'hierarchical' => false,
         // all of the following settings can be and by default are inherited from the value of public, however it is possible to set them individually
