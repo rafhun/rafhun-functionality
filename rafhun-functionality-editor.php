@@ -41,6 +41,11 @@ function rafhun_editor_mce_before_init_insert_formats( $init_array ) {
       'selector' => 'p',
       'classes' => 'lead'
     ),
+    array(
+      'title' => 'Beispiel Inline Style',
+      'inline' => 'span',
+      'classes' => 'inline-style-class'
+    )
   );
 
   $init_array['style_formats'] = json_encode( $style_formats );
