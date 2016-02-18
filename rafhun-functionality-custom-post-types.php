@@ -73,7 +73,7 @@ if ( !class_exists( 'PostType' ) ) :
         'menu_icon' => 'dashicons-hammer',
         'capability_type' => 'post',
         // 'capabilities' => '', // set from capability_type
-        'map_meta_cap' => false,
+        // 'map_meta_cap' => false,
         'supports' => array( 'title', 'editor', 'thumbnail' ),
         // 'register_meta_box_cb' => null,
         // 'taxonomies' => null,
