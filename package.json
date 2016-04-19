@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/rafhun/rafhun-functionality-plugins#readme",
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-gettext": "^0.1.0",
-    "gulp-sort": "^1.1.1",
-    "gulp-wp-pot": "^1.1.1"
+    "gulp": "^3.9.1",
+    "gulp-gettext": "^0.3.0",
+    "gulp-sort": "^2.0.0",
+    "gulp-wp-pot": "^1.2.0"
   }
 }
